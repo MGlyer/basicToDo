@@ -13,11 +13,11 @@ class App extends React.Component {
     }
 
     send (taskText) {
-        axios.post({task: taskText})
+        axios.post('/', {task: taskText})
     }
 
     fetch() {
-        axios.get()
+        axios.get('/')
              .then(result => this.setState({tasks: result}))
     }
 
